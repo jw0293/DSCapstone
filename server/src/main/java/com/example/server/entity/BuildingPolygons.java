@@ -13,7 +13,7 @@ public class BuildingPolygons {
     @Id
     private Long id;
 
-//    @Column
+//    @Column(nullable = true, columnDefinition = "GEOMETRY")
 //    private Polygon shape;
 
     @Column

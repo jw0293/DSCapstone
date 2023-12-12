@@ -25,6 +25,8 @@ public class QRentPrice extends EntityPathBase<RentPrice> {
 
     public final StringPath construction_year = createString("construction_year");
 
+    public final StringPath contract_date = createString("contract_date");
+
     public final NumberPath<Long> deposit = createNumber("deposit", Long.class);
 
     public final StringPath eupmyeondong = createString("eupmyeondong");

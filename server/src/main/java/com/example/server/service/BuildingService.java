@@ -3,6 +3,7 @@ package com.example.server.service;
 import com.example.server.entity.BuildingPolygons;
 import com.example.server.repository.BuildingPolygons.BuildingPolygonsRepository;
 import com.example.server.vo.request.MapPositionRequest;
+import com.example.server.vo.response.BuildingPriceResponse;
 import com.example.server.vo.response.BuildingResponse;
 import com.example.server.vo.response.BuildingsResponse;
 import lombok.RequiredArgsConstructor;
@@ -28,5 +29,9 @@ public class BuildingService {
 
     public List<BuildingsResponse> findAllBuildings(MapPositionRequest mapPositionRequest) {
         return buildingPolygonsRepository.findAllBuildings(mapPositionRequest);
+    }
+
+    public List<BuildingPriceResponse> createBuildingPriceResponse(String addressId) {
+        return buildingPolygonsRepository.findBuildingPriceByAddressId(addressId);
     }
 }

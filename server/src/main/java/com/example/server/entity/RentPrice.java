@@ -25,6 +25,9 @@ public class RentPrice {
     private String building_name;
 
     @Column
+    private String contract_date;
+
+    @Column
     private String construction_year;
 
     @Column

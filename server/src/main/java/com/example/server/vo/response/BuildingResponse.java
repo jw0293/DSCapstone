@@ -23,7 +23,7 @@ public class BuildingResponse {
     private Float slope_min;
 
     private String building_name;
-    //private String shape;
+    //private Polygon shape;
     private String construction_year;
 
     private String rent_type;
